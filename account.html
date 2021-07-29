@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- <nav class="navigation-bar"> -->
+        <div class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <i class="fa fa-shopping-bag fa-2x"></i>
+                    Renegade Mob
+                </a>
+    
+            <div class="navbar_toggle" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+    
+            </div>
+    
+    
+            <!-- navbar links -->
+            <ul class="navbar_menu">
+                <li class="navbar_item"><a href="index.html" class="nav_links"> HOME </a> </li>
+                <li class="navbar_item"><a href="products.html" class="nav_links"> PRODUCTS </a> </li>
+                <li class="navbar_item"><a href="#" class="nav_links"> ABOUT US </a> </li>
+                <li class="navbar_item"><a href="#" class="nav_links"> CONTACT US </a> </li>
+                <li class="navbar_item"><a href="account.html" class="nav_links"> ACCOUNT</a> </li>
+                <li id="search"> 
+                    <input type="text" placeholder="search"> <button type="submit"><i class="fa fa-search"></i></button>
+                </li>
+               
+             </ul>
+                <span><i class="fa fa-shopping-cart fa-2x"></i></span>
+        </div>
+    </nav>
+    
+    <!-- account page -->
+
+    <div class="account-page">
+        <div class="conatainer">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/Renegade.jpg" alt="" width="100%">
+                </div>
+                <div class="col-3">
+                   <div class="form-container">
+                       <div class="form-btn">
+                           <span onclick="login()">Login</span>
+                           <span onclick="register()">Register</span>
+                           <hr id="indicator">
+                       </div>
+                       <form id="loginForm" action="">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href=""> Forgot password?</a>
+                       </form>
+
+                       <form id="regForm" action="">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+                       </form>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+       <footer>
+           <div class="container">
+               <div class="row">
+                   <div class="footer-col-1">
+                       <h3>Useful Links</h3>
+                       <ul>
+                           <li>Coupons</li>
+                           <li>Return Policy</li>
+                           <li>Contact Us</li>
+                           <li>Support Us</li>
+                       </ul>
+                   </div>
+                   <div class="footer-col-2">
+                       <h3>Follow Us</h3>
+                       <ul>
+                           <li><a href="">Facebook</a></li>
+                           <li><a href="">Twitter</a></li>
+                           <li><a href="">Instagram</a></li>
+                           <li><a href="">LinkedIn</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-contact">
+                       <h3>Address</h3>
+                       <p>
+                        <address>
+                        Quarters 36, Yabatech Staff qauarters,<br> Yaba, Lagos.                   
+                       </address>
+                        </p>
+    
+                        <p>Contact: +234 900 900 800</p>
+                   </div>
+    
+                   
+               </div>
+               <hr>
+               <p id="copyright">Copyright 2021 - Laniran Jaypee</p>
+           </div>
+       </footer>
+    
+
+
+<script>
+var LoginForm = document.getElementById("loginForm");
+var RegForm = document.getElementById("regForm");
+var Indicator = document.getElementById("indicator");
+
+            function register(){
+
+                    RegForm.style.transform = "translateX(0px)";
+                    LoginForm.style.transform = "translateX(0px)";
+                    indicator.style.transform = "translateX(100px)"
+
+            }
+
+            function login(){
+
+                    RegForm.style.transform = "translateX(300px)";
+                    LoginForm.style.transform = "translateX(300px)";
+                    indicator.style.transform = "translateX(0px)"
+            }
+
+
+</script>
+
+    <script src="app.js"></script>
+
+
+
+
+    
+</body>
+</html>

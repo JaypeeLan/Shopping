@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- <nav class="navigation-bar"> -->
+        <div class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <i class="fa fa-shopping-bag fa-2x"></i>
+                    Renegade Mob
+                </a>
+    
+            <div class="navbar_toggle" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+    
+            </div>
+    
+    
+            <!-- navbar links -->
+            <ul class="navbar_menu">
+                <li class="navbar_item"><a href="index.html" class="nav_links"> HOME </a> </li>
+                <li class="navbar_item"><a href="products.html" class="nav_links"> PRODUCTS </a> </li>
+                <li class="navbar_item"><a href="#" class="nav_links"> ABOUT US </a> </li>
+                <li class="navbar_item"><a href="#" class="nav_links"> CONTACT US </a> </li>
+                <li class="navbar_item"><a href="account.html" class="nav_links"> ACCOUNT</a> </li>
+                <li id="search"> 
+                    <input type="text" placeholder="search"> <button type="submit"><i class="fa fa-search"></i></button>
+                </li>
+               
+             </ul>
+                <span><i class="fa fa-shopping-cart fa-2x"></i></span>
+        </div>
+    </nav>
+    
+        
+ <section>
+    <div class="categories-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td> 
+                    <div class="cart-info">
+                    <img src="images/bluesaway.png" alt="">
+          
+                    <div>
+                       <p>Chelsea Away Jersey</p>
+                        <small>Price: N8000</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+
+                    </div>
+
+                </td>
+                <td><input type="number" value="1" min="0"></td>
+                <td>N8000</td>
+            </tr>
+            <tr>
+                <td> 
+                    <div class="cart-info">
+                    <img src="images/city.png" alt="">
+          
+                    <div>
+                       <p>Man city Jersey</p>
+                        <small>Price: N8000</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+
+                    </div>
+
+                </td>
+                <td><input type="number" value="1" min="0"></td>
+                <td>N8000</td>
+            </tr>
+
+            <tr>
+                <td> 
+                    <div class="cart-info">
+                    <img src="images/juve.png" alt="juve">
+          
+                    <div>
+                       <p>Juventus Jersey</p>
+                        <small>Price: N8000</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+
+                    </div>
+
+                </td>
+                <td><input type="number" value="1" min="0"></td>
+                <td>N8000</td>
+            </tr>
+        </table>
+
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>N8000</td>
+                </tr>
+                <tr>
+                    <td>Delivery Fee</td>
+                    <td>N1000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>N9000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    
+ </section>
+    
+       <footer>
+           <div class="container">
+               <div class="row">
+                   <div class="footer-col-1">
+                       <h3>Useful Links</h3>
+                       <ul>
+                           <li>Coupons</li>
+                           <li>Return Policy</li>
+                           <li>Contact Us</li>
+                           <li>Support Us</li>
+                       </ul>
+                   </div>
+                   <div class="footer-col-2">
+                       <h3>Follow Us</h3>
+                       <ul>
+                           <li><a href="">Facebook</a></li>
+                           <li><a href="">Twitter</a></li>
+                           <li><a href="">Instagram</a></li>
+                           <li><a href="">LinkedIn</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-contact">
+                       <h3>Address</h3>
+                       <p>
+                        <address>
+                        Quarters 36, Yabatech Staff qauarters,<br> Yaba, Lagos.                   
+                       </address>
+                        </p>
+    
+                        <p>Contact: +234 900 900 800</p>
+                   </div>
+    
+                   
+               </div>
+               <hr>
+               <p id="copyright">Copyright 2021 - Laniran Jaypee</p>
+           </div>
+       </footer>
+    
+    <script src="app.js"></script>
+
+
+    
+</body>
+</html>
